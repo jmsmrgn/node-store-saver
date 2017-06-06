@@ -2,6 +2,8 @@
   "extends": "standard",
   "rules": {
     "space-before-function-paren": ["off"],
-    "no-path-concat": ["off"]
+    "no-path-concat": ["off"],
+    "standard/object-curly-even-spacing": ["off"],
+    "no-useless-return": ["off"]
   }
 }
