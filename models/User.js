@@ -23,7 +23,7 @@ const userSchema = new Schema({
   resetPasswordToken: String,
   resetPasswordExpires: Date,
   hearts: [
-    { type: Schema.ObjectId, ref: 'store' }
+    { type: mongoose.Schema.ObjectId, ref: 'store' }
   ]
 })
 
