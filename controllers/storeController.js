@@ -142,7 +142,7 @@ exports.mapStores = async (req, res) => {
 }
 
 exports.mapPage = (req, res) => {
-  res.render('map', { title: 'map '})
+  res.render('map', { title: 'map'})
 }
 
 exports.heartStore = async (req, res) => {
@@ -154,4 +154,11 @@ exports.heartStore = async (req, res) => {
       { new: true }
     )
   res.json(user)
+}
+
+exports.getHearts = async (req, res) => {
+  const stores = await Store.find({
+    _id: { $in: req.user.hearts }
+  })
+  res.render('stores', { title: 'Hearted Stores', stores })
 }
