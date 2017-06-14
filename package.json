@@ -1,8 +1,11 @@
 {
-  "name": "node-collector",
+  "name": "node-store-saver",
   "version": "1.0.0",
   "engines": {
     "node": ">= 7.6.0"
+  },
+  "now": {
+    "dotenv": "variables.env.now"
   },
   "scripts": {
     "prod": "node ./start.js",
